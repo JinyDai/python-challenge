@@ -22,7 +22,8 @@ with open(pypoll_csv,"r",newline="") as csvfile:
     #calculate the total vote
         votes=len(total_votes)
     #print(f"Total Votes: {votes}")
-    # use if condition to check the candidate names and add the votes of each candidate
+    #use if condition to check the candidate names and add the votes of each candidate
+    #https://www.pythonforbeginners.com/dictionary/how-to-use-dictionaries-in-python/
         if row[2] in candidates.keys():
             candidates[row[2]] = candidates[row[2]] + 1
         else:
